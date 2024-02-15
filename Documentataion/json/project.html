@@ -1,0 +1,2513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <script src="../jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/video.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style (1).css">
+
+
+
+
+    <title>Prject</title>
+    <style>
+        li a {
+            color: white !important;
+        }
+
+        .h {
+            background: url(images/m2.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+        }
+
+        .n {
+            background: url(images/m1.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+        }
+
+        .i {
+            background: url(images/d1.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+        }
+
+        .l {
+            background: url(images/m6.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+        }
+
+        .b {
+            background: url(images/m7.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+        }
+
+        .c {
+            background: url(images/a10.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+        }
+
+        .e {
+            background: url(images/d5.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+        }
+
+        .about {
+            background: url(images/ibg5.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+
+
+        .cf1 .row p {
+            color: white;
+            text-align: center;
+        }
+
+        .cf1 .row span {
+            color: black;
+        }
+
+        .main_h {
+            background-color: rgba(34, 31, 31, 0.7);
+            padding: 25px;
+        }
+
+        .card {
+            box-shadow: 15px;
+        }
+
+        /* contact start */
+        .contact_section {
+            position: relative;
+            color: #ffffff;
+        }
+
+        .contact_section .row {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .contact_section .contact_form-container {
+            margin-top: 35px;
+        }
+
+        .contact_section .contact_form-container input {
+            border: none;
+            outline: none;
+            color: #fefefe;
+            height: 45px;
+            width: 100%;
+            margin: 15px 0;
+            padding-left: 15px;
+            background-color: transparent;
+            border-bottom: 1px solid #fff;
+        }
+
+        .contact_section .contact_form-container input::-webkit-input-placeholder {
+            color: #fafafa;
+            text-transform: uppercase;
+        }
+
+        .contact_section .contact_form-container input:-ms-input-placeholder {
+            color: #fafafa;
+            text-transform: uppercase;
+        }
+
+        .contact_section .contact_form-container input::-ms-input-placeholder {
+            color: #fafafa;
+            text-transform: uppercase;
+        }
+
+        .contact_section .contact_form-container input::placeholder {
+            color: #fafafa;
+            text-transform: uppercase;
+        }
+
+        .contact_section .contact_form-container input.localstorage_input {
+            height: 75px;
+        }
+
+        .contact_section .contact_form-container input:focus {
+            border-bottom: 1px solid #96bb7c;
+        }
+
+        .contact_section .contact_form-container input[type="date"]::-webkit-calendar-picker-indicator,
+        .contact_section .contact_form-container input[type="time"]::-webkit-calendar-picker-indicator {
+            color: #fff;
+            -webkit-filter: invert(1);
+            filter: invert(1);
+        }
+
+        .contact_section .contact_form-container .btn-box {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .contact_section .contact_form-container button {
+            display: inline-block;
+            padding: 10px 60px;
+            background-color: #96bb7c;
+            color: #ffffff;
+            border-radius: 5px;
+            border: 1px solid #96bb7c;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .contact_section .contact_form-container button:hover {
+            background-color: transparent;
+            color: #96bb7c;
+        }
+
+        .contact_bg_box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .contact_bg_box img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: top right;
+            object-position: top right;
+        }
+
+        .contact_bg_box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: -webkit-gradient(linear, left top, right top, from(rgba(24, 77, 71, 0.4)), to(rgba(24, 77, 71, 0.85)));
+            background: linear-gradient(to right, rgba(24, 77, 71, 0.4), rgba(24, 77, 71, 0.85));
+        }
+
+        .container-fluid {
+            padding: 120px !important;
+        }
+
+        #load-videos {
+            padding: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo4.png " alt="" height="50px">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active ">
+                        <a class="nav-link" id="nav_home" href="#home_section">Home
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" id="nav_about" href="#about_section">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" id="nav_books" href="#book_detail">Books</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId2" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Tools</a>
+                        <div class="dropdown-menu d" aria-labelledby="dropdownId ">
+                            <a class="dropdown-item text-dark" id="nav_g_t" href="#garden_tools">Garden tools</a>
+                            <a class="dropdown-item text-dark" id="nav_buy" href="#buy_products">Suggestions</a>
+                            <a class="dropdown-item text-dark" id="nav_s_f" href="#soil_fert">Soil and Fertiizer</a>
+                            <a class="dropdown-item text-dark" id="nav_i_p" href="#pest_plant">
+                                Pesticides for Plants
+                            </a>
+                            <a class="dropdown-item text-dark" id="nav_s" href="#seeds_details"> Seeds Details</a>
+
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Gardening Techniques</a>
+                        <div class="dropdown-menu d" aria-labelledby="dropdownId ">
+                            <a class="dropdown-item text-dark" id="nav_c_m" href="#condition_method">Condition
+                                method</a>
+                            <a class="dropdown-item text-dark" id="nav_t_g" href="#trade_inground">Traditional Inground
+                                Gardening
+                            </a>
+                            <a class="dropdown-item text-dark" id="nav_h_g" href="#hydropnic_garden">Hydroponic
+                                Gardening </a>
+                            <a class="dropdown-item text-dark" id="nav_g_c" href="#green_cold">Greenhouse, Cold Frames,
+                                and High
+                                Tunnels </a>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId3" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Products</a>
+                        <div class="dropdown-menu d" aria-labelledby="dropdownId ">
+                            <a class="dropdown-item text-dark" id="nav_p_p" href="#proper_pots">Proper Pots</a>
+                            <a class="dropdown-item text-dark" id="nav_w_h" href="#wall_hanging">
+                                Wall hanging brackets
+                            </a>
+                            <a class="dropdown-item text-dark" id="nav_p_h" href="#pot_hangers"> Pot hangers</a>
+                            <a class="dropdown-item text-dark" id="nav_r_b" href="#railing_brackets">railing brackets
+                            </a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId4" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Accesories</a>
+                        <div class="dropdown-menu d" aria-labelledby="dropdownId ">
+                            <a class="dropdown-item text-dark" id="nav_m_t" href="#miniature_toys">Miniature garden
+                                toys</a>
+                            <a class="dropdown-item text-dark" id="nav_g_a" href="#garden_access">Gardening
+                                accessories</a>
+                            <a class="dropdown-item text-dark" id="nav_d_p" href="#decorative_pebbles">Decorative
+                                pebbles </a>
+
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="hero r15">
+
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="images/vid.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <div class="col-md-12 col-sm-8 col-8">
+                <h1 class="">GARDENING WORLD</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- search section -->
+
+
+
+    <!-- gardening techniques start -->
+    <section id="Categories">
+        <div class="container p-5 mt-2 ">
+            <h1 class="P-5 text-center">Our Main Gardening techniques</h1>
+            <div class="row justify-content-around p-3">
+
+                <div class="col-md-6 col-sm-12 mt-3 rounded p-5 h"> <a href="#condition_method" id="c_m">
+                        <h2 class="text-light main_h">Condition gardening method</h2>
+                    </a>
+
+                </div>
+                <div class="col-md-6 col-sm-12 mt-3 rounded p-5 n"><a href="#trade_inground" id="t_g">
+                        <h2 class="text-light main_h">Traditional Inground Gardening</h2>
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-12 mt-3 rounded p-5 i"><a href="#hydropnic_garden" id="h_g">
+                        <h2 class="text-light main_h">Hydropnic garden</h2>
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-12 mt-3 rounded p-5 l"><a href="#green_cold" id="g_c">
+                        <h2 class="text-light main_h">Cold Frames, and High Tunnels</h2>
+                    </a>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- main categories end -->
+    <!-- Accessories start -->
+    <section id="accessories">
+        <div class="container p-5 mt-2 ">
+            <h1 class="P-5 text-center">Our Accessories</h1>
+            <div class="row justify-content-around p-3">
+
+                <div class="col-md-3 col-sm-12 mt-3 rounded p-5 b"> <a href="#miniature_toys" id="m_t">
+                        <h4 class="text-light main_h">Miniature toys</h4>
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-md-3 col-sm-12 mt-3 rounded p-5 c"><a href="#garden_access" id="g_a">
+                        <h4 class="text-light main_h">Gardening Accessories</h4>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-12 mt-3 rounded p-5 e"><a href="#decorative_pebbles" id="d_p">
+                        <h4 class="text-light main_h">Decorative Pebbles</h4>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Accessories end -->
+
+    <!-- condition method start -->
+    <section id="condition_method">
+        <div class="container mt-5 h-100">
+            <h1 class="text-center mt-3">Condition gardening method</h1>
+            <div class="row justify-content-around r2">
+
+            </div>
+
+        </div>
+    </section>
+    <!-- condition gardening method end -->
+
+    <!--Traditional Inground Gardening start -->
+    <section id="trade_inground">
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Traditional Inground Gardening</h1>
+            <div class="row justify-content-around r3">
+
+            </div>
+        </div>
+    </section>
+    <!-- Traditional Inground Gardening end -->
+
+    <!--Decorative Pebbles start -->
+    <section id="hydropnic_garden">
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Hydropnic garden</h1>
+            <div class="row justify-content-around r4">
+
+            </div>
+        </div>
+    </section>
+    <!-- DEcorataives Pebbles end -->
+    <!-- Greenhouse, Cold Frames, and High Tunnels start -->
+    <section id="green_cold">
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Greenhouse, Cold Frames, and High Tunnels</h1>
+            <div class="row justify-content-around r5">
+
+            </div>
+        </div>
+    </section>
+    <!-- Greenhouse, Cold Frames, and High Tunnels end -->
+
+    <section id="miniature_toys">
+        .
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Miniature garden toys</h1>
+            <div class="row justify-content-around r6">
+
+            </div>
+        </div>
+    </section>
+    <!-- garden accessoies start -->
+    <section id="garden_access">
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Garden Accessories</h1>
+            <div class="row justify-content-around r7">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Decorative Pebbles start -->
+    <section id="decorative_pebbles">
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Decorative Pebbles</h1>
+            <div class="row justify-content-around r8">
+
+            </div>
+        </div>
+    </section>
+    <!-- Buying productss start -->
+    <section id="buy_products">
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Buying Products</h1>
+            <div class="row justify-content-around r20">
+
+            </div>
+        </div>
+    </section>
+    <!-- garden tools start -->
+    <section id="garden_tools">
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Garden Tools</h1>
+            <div class="row justify-content-around r9">
+
+            </div>
+            <hr>
+
+        </div>
+    </section>
+    <!-- Proper pots start -->
+    <section id="proper_pots">
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Proper Pots</h1>
+            <div class="row justify-content-around r10">
+
+            </div>
+        </div>
+    </section>
+    <!-- wall hanging brackets start -->
+    <section id="wall_hanging">
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Wall Hanging Brackets</h1>
+            <div class="row justify-content-around r11">
+
+            </div>
+        </div>
+    </section>
+    <!-- Pot Hangers brackets start -->
+    <section id="pot_hangers">
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Wall Hanging Brackets</h1>
+            <div class="row justify-content-around r12">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Railing Brackets brackets start -->
+    <section id="railing_brackets">
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Railing Brackets</h1>
+            <div class="row justify-content-around r13">
+
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!--soil and fertilizer start -->
+    <section id="soil_fert">
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Soil And Fertilizer</h1>
+            <div class="row justify-content-around r17">
+
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!--Pesticides for Plant start -->
+    <section id="pest_plant">
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Pesticides for Plants</h1>
+            <div class="row justify-content-around r18">
+
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <!--Seeds details start -->
+    <section id="seeds_details">
+        <div class="container mt-5">
+            <h1 class="text-center mt-3">Seeds Details</h1>
+            <div class="row justify-content-around r19">
+
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- about section start -->
+
+    <section id="about_section">
+
+        <div class="container">
+            <h1 class="text-center p-5">About Nursery....</h1>
+            <div class="row">
+                <div class="col-md-6 about">
+
+                </div>
+                <div class="col-md-6">
+                    <h1 class="pl-5">What we are?????</h1>
+                    <p class="text-justify p-5">
+                        nursery, place where plants are grown for transplanting, for use as stock for budding and
+                        grafting, or for sale. Commercial nurseries produce and distribute woody and herbaceous plants,
+                        including ornamental trees, shrubs, and bulb crops.
+                        Nursing encompasses autonomous and collaborative care of individuals of all ages, families,
+                        groups and communities, sick or well and in all settings. Nursing includes the promotion of
+                        health, prevention of illness, and the care of ill, disabled and dying people.
+                        n a nursery, plants are nurtured by providing them with optimum growing conditions to ensure
+                        germination. Nursery saves considerable time for the raising of the next crop. Among flower
+                        crops, majority of the annuals are propagated by seeds and require a nursery for raising the
+                        seedlings.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <br>
+    <br>
+    <!-- about section end-->
+    <!-- book section start -->
+    <section id="book_detail">
+        <div class="heading2">
+            <h1>OUR GARDENING BOOKS</h1>
+        </div>
+
+        <div class="wrap r14">
+            <div class="box">
+                <div class="box-top">
+                    <img class="box-image" src="images/XL.jfif" alt="book name : vegetable gardening">
+                    <div class="title-flex">
+                        <h3 class="box-title">BY BYRON SMITH
+                        </h3>
+                        <!-- <p class="user-follow-info"> writer :BYRON SMITH</p> -->
+                    </div>
+                    <p class="description">Byron Smith is a horticulturalist and founder of Urban Growers, an
+                        edible garden company </p>
+                </div>
+                <a target="_blank" href="https://www.quarto.com/books/9781760525927/slow-down-and-grow-something"
+                    class="button">book link</a>
+            </div>
+            <div class="box">
+                <div class="box-top">
+                    <img class="box-image" src="images/o.jfif" alt="">
+                    <div class="title-flex">
+                        <h3 class="box-title">BY NARDOZZI</h3>
+                        <!-- <p class="user-follow-info">33 Projects</p> -->
+                    </div>
+                    <p class="description">Charlie Nardozzi is a nationally
+                        recognized garden writer, speaker, and radio and television personality. </p>
+                </div>
+                <a href="https://www.quarto.com/books/9780760367919/the-complete-guide-to-no-dig-gardening"
+                    target="_blank" class="button">book link</a>
+            </div>
+            <div class="box">
+                <div class="box-top">
+                    <img class="box-image" src="images/Lp.jfif" alt="Girl Eating Pizza">
+                    <div class="title-flex">
+                        <h3 class="box-title">BY JEROME</h3>
+                        <!-- <p class="user-follow-info">26 Projects</p> -->
+                    </div>
+                    <p class="description">Jerome Kellerhals, born in Switzerland, has been around bonsai for as
+                        long as he can remember.</p>
+                </div>
+                <a target="_blank" href="https://www.quarto.com/books/9780760371978/freestyle-bonsai"
+                    class="button">book link</a>
+            </div>
+            <div class="box">
+                <div class="box-top">
+                    <img class="box-image" src="images/i.jfif" alt="Girl Eating Pizza">
+                    <div class="title-flex">
+                        <h3 class="box-title"> BY JOE LAMP'L</h3>
+                        <!-- <p class="user-follow-info">12 Projects</p> -->
+                    </div>
+                    <p class="description">Joe Lamp’l is one of the country’s most recognized and trusted
+                        personalities in gardening and green living.</p>
+                </div>
+                <a target="_blank" href="https://www.quarto.com/books/9780760375716/the-vegetable-gardening-book"
+                    class="button">book link</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="video-container">
+        <h1>Welcome to our Video Collection</h1>
+        <div id="video-container">
+            <!-- Videos will be displayed here -->
+
+        </div>
+        <button class="btn btn-success" id="load-videos">Load Videos</button>
+    </section>
+    <br>
+    <!-- contact section start -->
+    <section id="feedback" class="contact_section layout_padding">
+        <div class="container-fluid p-5">
+            <div class="contact_bg_box">
+                <img src="images/contact-bg.jpg" alt="">
+            </div>
+            <div class="container">
+                <div class="heading_container heading_center">
+                    <h2 class="text-center ">Your Feedback is Valueable for us</h2>
+                </div>
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-7 mx-auto">
+                            <div class="contact_form-container">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="text" placeholder="Full Name" id="e_name">
+                                        <small></small>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" placeholder="Email" id="e_email">
+                                        <small></small>
+                                    </div>
+                                </div>
+
+
+                                <div class="">
+                                    <input type="text" placeholder="Additional Note" class="localstorage_input"
+                                        id="e_massage" />
+                                    <small></small>
+                                </div>
+                                <div class="btn_box">
+                                    <button id="checkfields">Send</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark pt-2">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 style="color: white;" class="text-uppercase">Garden world</h5>
+                    <br>
+                    <p style="color: white;">My garden contains different types of plants. For instance, it has
+                        different flowers such as roses, sunflowers, Lilies, daisies. These flowers are the easiest to
+                        grow and flourish the environment with their beautiful smells. Moreover, the colors of these
+                        flowers make a garden look beautiful.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 style="color: white;" class="text-uppercase">Gardening Techniques</h5>
+                    <br>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a id="f_c_m" href="#condition_method">Condition method</a>
+                        </li>
+                        <li>
+                            <a id="f_t_g" href="#trade_inground">Trade Inground</a>
+                        </li>
+                        <li>
+                            <a id="f_h_g" href="#hydropnic_garden">Hydropnic garden</a>
+                        </li>
+                        <li>
+                            <a id="f_g_c" href="#green_cold">green cold</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 style="color: white;" class="text-uppercase">Accessories</h5>
+                    <br>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a id="f_m_t" href="#miniature_toys">Miniature toys</a>
+                        </li>
+                        <li>
+                            <a id="f_g_a" href="#garden_access">garden access</a>
+                        </li>
+                        <li>
+                            <a id="f_d_p" href="#decorative_pebbles">Decorative Pebbles</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 style="color: white;" class="text-uppercase">Accessories</h5>
+                    <br>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a id="f_home" href="#home_section">Home</a>
+                        </li>
+                        <li>
+                            <a id="f_about" href="#about_section">About</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+                <!-- Grid column -->
+                <div class="text-center text-white p-3">
+
+                    <a class="text-white" href="">garden world@gmail.com</a>
+                </div>
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+
+    </footer>
+    <!-- Footer -->
+    <script>
+
+        let condition_method = $(".r2");
+        let trade_inground = $(".r3");
+        let hydropnic_garden = $(".r4");
+        let green_cold = $(".r5");
+        let miniature_toys = $(".r6");
+        let garden_access = $(".r7");
+        let decorative_pebbles = $(".r8");
+        let garden_tools = $(".r9");
+        let proper_pots = $(".r10");
+        let wall_hanging = $(".r11");
+        let pot_hangers = $(".r12");
+        let railing_brackets = $(".r13");
+        let book_detail = $(".r14");
+        let home_section = $(".r15");
+        let soil_fert = $(".r17");
+        let pest_plant = $(".r18");
+        let seeds_details = $(".r19");
+        let buy_products = $(".r20");
+        let c_m = "";
+        let t_g = "";
+        let h_g = "";
+        let g_c = "";
+        let m_t = "";
+        let g_a = "";
+        let d_p = "";
+        let g_t = "";
+        let p_p = "";
+        let w_h = "";
+        let p_h = "";
+        let r_b = "";
+        let b_d = "";
+        let h_S = "";
+        let f_s = "";
+        let s_f = "";
+        let i_p = "";
+        let s_d = "";
+        let b_p = "";
+
+        $.ajax({
+            url: "product.json",
+            method: "get",
+            success: function (data) {
+                $.each(data.condition_method, function (abc, v) {
+                    //    console.log(value.name)
+
+                    c_m += `<div class="col-md-8 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ v.image + `" alt="" height="300px">
+            <div class="card-body">
+                <h2 class="card-title">`+ v.name + `<span></span>
+             
+                </div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#conditionmethod`+ v.id + `">Detail</button>
+                <div class="modal fade" id="conditionmethod`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+<div class="modal-body">
+                <div class="row">
+                        <div class="col-md-5">
+                            <img class="img-top img-fluid" src="`+ v.image + `" alt="" height="150px">
+                        </div>
+                        <div class="col-md-6 ">
+                            <p>
+                           `+ v.description + `
+                            </p>    
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" class="p_id" value="`+ v.id + `>
+                    <input type="hidden" class="p_name" value="`+ v.description + `">
+                    <input type="hidden" class="p_image" value="`+ v.image + `">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>`
+
+
+                    condition_method.html(c_m);
+                });
+
+
+                //condition method end
+
+
+                //  Tradational inground  start
+
+
+                $.each(data.trade_inground, function (abc, v) {
+                    //    console.log(value.name)
+
+
+                    t_g += `<div class="col-md-8 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ v.image + `" alt="" height="300px">
+            <div class="card-body">
+                <h2 class="card-title">`+ v.name + `<span></span>
+          
+                </div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#tradeinground`+ v.id + `">Detail</button>
+                <div class="modal fade" id="tradeinground`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+
+                    
+                    
+                
+            
+<div class="modal-body">
+                <div class="row" >
+                        <div class="col-md-5 ">
+                            <img class="img-top img-fluid" src="`+ v.image + `" alt="" height="150px">
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                           `+ v.description + `
+                            </p>    
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" class="p_id" value="`+ v.id + `">
+                    <input type="hidden" class="p_name" value="`+ v.description + `">
+                    <input type="hidden" class="p_image" value="`+ v.image + `">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>`
+
+
+                    trade_inground.html(t_g);
+                });
+
+                //trade inground 
+
+
+                //   traditional inground end
+
+                $.each(data.hydropnic_garden, function (n, p) {
+                    //    console.log(value.name)
+
+
+                    h_g += `<div class="col-md-8 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ p.image + `" alt="" height="300px">
+            
+            <div class="card-body"><h2 class="card-title">`+ p.name + `<span></span>
+                <p></p>
+                </div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#hydropnicgarden`+ p.id + `">Detail</button>
+                <div class="modal fade" id="hydropnicgarden`+ p.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">`+ p.name + `</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="row" >
+                        <div class="col-md-5 ">
+                            <img class="img-top img-fluid" src="`+ p.image + `" alt="" height="150px">
+                        </div>
+                        <div class="col-md-6">
+                           <p>
+                           `+ p.description + `
+                            </p>
+                          
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" class="p_id" value="`+ p.id + `">
+                    <input type="hidden" class="p_name" value="`+ p.description + `">
+                    <input type="hidden" class="p_image" value="`+ p.image + `">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>`
+
+                });
+
+
+
+                hydropnic_garden.html(h_g);
+
+
+
+                //   hydropnic garden end 
+                // green house ,cold start
+                $.each(data.green_cold, function (abc, v) {
+                    //    console.log(value.name)
+
+
+                    g_c += `<div class="col-md-8 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ v.image + `" alt="" height="300px">
+            
+            <div class="card-body"><h2 class="card-title">`+ v.name + `<span></span>
+                <p></p>
+                </div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#greencold`+ v.id + `">Detail</button>
+                <div class="modal fade" id="greencold`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">`+ v.name + `</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="row" >
+                        <div class="col-md-5">
+                            <img class="img-top img-fluid" src="`+ v.image + `" alt="" height="150px">
+                        </div>
+                        <div class="col-md-6">
+                           <p>
+                           `+ v.description + `
+                            </p>
+                          
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" class="v_id" value="`+ v.id + `">
+                    <input type="hidden" class="v_name" value="`+ v.description + `">
+                    <input type="hidden" class="v_image" value="`+ v.image + `">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>`
+
+                });
+                green_cold.html(g_c);
+
+                $.each(data.miniature_toys, function (abc, v) {
+                    //    console.log(value.name)
+
+
+                    m_t += `<div class="col-md-3 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ v.image + `" alt="">
+            
+            <div class="card-body"><h4 class="card-title">`+ v.name + `<span></span>
+                <p></p>
+                </div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#miniaturetoys`+ v.id + `">Detail</button>
+                <div class="modal fade" id="miniaturetoys`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">`+ v.name + `</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="row" >
+                        <div class="col-md-5">
+                            <img class="img-top img-fluid" src="`+ v.image + `" alt="" height="150px">
+                        </div>
+                        <div class="col-md-6">
+                           <p>
+                           `+ v.description + `
+                            </p>
+                          
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" class="v_id" value="`+ v.id + `">
+                    <input type="hidden" class="v_name" value="`+ v.description + `">
+                    <input type="hidden" class="v_image" value="`+ v.image + `">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>`
+
+                });
+                miniature_toys.html(m_t);
+
+                //garden access start
+                $.each(data.garden_access, function (abc, v) {
+                    //    console.log(value.name)
+
+
+                    g_a += `<div class="col-md-3 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ v.image + `" alt="" >
+            
+            <div class="card-body"><h3 class="card-title">`+ v.name + `<span></span>
+                <p></p>
+                </div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#gardenaccess`+ v.id + `">Detail</button>
+                <div class="modal fade" id="gardenaccess`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">`+ v.name + `</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="row" >
+                        <div class="col-md-5">
+                            <img class="img-top img-fluid" src="`+ v.image + `" alt="" height="150px">
+                        </div>
+                        <div class="col-md-6">
+                           <p>
+                           `+ v.description + `
+                            </p>
+                          
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" class="v_id" value="`+ v.id + `">
+                    <input type="hidden" class="v_name" value="`+ v.description + `">
+                    <input type="hidden" class="v_image" value="`+ v.image + `">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>`
+
+                });
+                garden_access.html(g_a);
+                // decorative pebbles start
+                $.each(data.decorative_pebbles, function (abc, v) {
+                    //    console.log(value.name)
+
+
+                    d_p += `<div class="col-md-3 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ v.image + `" alt="" >
+            
+            <div class="card-body"><h3 class="card-title">`+ v.name + `<span></span>
+                <p></p>
+                </div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#decorativepebbles`+ v.id + `">Detail</button>
+                <div class="modal fade" id="decorativepebbles`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">`+ v.name + `</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="row" >
+                        <div class="col-md-5">
+                            <img class="img-top img-fluid" src="`+ v.image + `" alt="" height="150px">
+                        </div>
+                        <div class="col-md-6">
+                           <p>
+                           `+ v.description + `
+                            </p>
+                          
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" class="v_id" value="`+ v.id + `">
+                    <input type="hidden" class="v_name" value="`+ v.description + `">
+                    <input type="hidden" class="v_image" value="`+ v.image + `">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>`
+
+                });
+                decorative_pebbles.html(d_p);
+                // Proper pots start
+                $.each(data.garden_tools, function (abc, v) {
+                    //    console.log(value.name)
+
+
+                    g_t += `<div class="col-md-3 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ v.image + `" alt="" >
+            
+            <div class="card-body"><h3 class="card-title">`+ v.name + `<span></span>
+                <p></p>
+                </div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#gardentools`+ v.id + `">Detail</button>
+                <div class="modal fade" id="gardentools`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">`+ v.name + `</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="row" >
+                        <div class="col-md-5">
+                            <img class="img-top img-fluid" src="`+ v.image + `" alt="" height="150px">
+                        </div>
+                        <div class="col-md-6">
+                           <p>
+                           `+ v.description + `
+                            </p>
+                          
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" class="v_id" value="`+ v.id + `">
+                    <input type="hidden" class="v_name" value="`+ v.description + `">
+                    <input type="hidden" class="v_image" value="`+ v.image + `">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>`
+
+                });
+                garden_tools.html(g_t);
+                // Garden TOOLS end
+                $.each(data.proper_pots, function (abc, v) {
+                    //    console.log(value.name)
+
+
+                    p_p += `<div class="col-md-3 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ v.image + `" alt="" >
+            
+            <div class="card-body"><h3 class="card-title">`+ v.name + `<span></span>
+                <p></p>
+                </div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#gardentools`+ v.id + `">Detail</button>
+                <div class="modal fade" id="gardentools`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">`+ v.name + `</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="row" >
+                        <div class="col-md-5">
+                            <img class="img-top img-fluid" src="`+ v.image + `" alt="" height="150px">
+                        </div>
+                        <div class="col-md-6">
+                           <p>
+                           `+ v.description + `
+                            </p>
+                          
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" class="v_id" value="`+ v.id + `">
+                    <input type="hidden" class="v_name" value="`+ v.description + `">
+                    <input type="hidden" class="v_image" value="`+ v.image + `">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>`
+
+                });
+                proper_pots.html(p_p);
+
+                // wallhanging brackets start  
+                $.each(data.wall_hanging, function (abc, v) {
+                    //    console.log(value.name)
+
+
+                    w_h += `<div class="col-md-3 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ v.image + `" alt="" >
+            
+            <div class="card-body"><h3 class="card-title">`+ v.name + `<span></span>
+                <p></p>
+                </div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#wallhanging`+ v.id + `">Detail</button>
+                <div class="modal fade" id="wallhanging`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">`+ v.name + `</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="row" >
+                        <div class="col-md-5">
+                            <img class="img-top img-fluid" src="`+ v.image + `" alt="" height="150px">
+                        </div>
+                        <div class="col-md-6">
+                           <p>
+                           `+ v.description + `
+                            </p>
+                          
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" class="v_id" value="`+ v.id + `">
+                    <input type="hidden" class="v_name" value="`+ v.description + `">
+                    <input type="hidden" class="v_image" value="`+ v.image + `">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>`
+
+                });
+                wall_hanging.html(w_h);
+                // Pot Hangers start
+                $.each(data.pot_hangers, function (abc, v) {
+                    //    console.log(value.name)
+
+
+                    p_h += `<div class="col-md-3 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ v.image + `" alt="" >
+            
+            <div class="card-body"><h5 class="card-title">`+ v.name + `<span></span>
+                <p></p>
+                </div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#wallhanging`+ v.id + `">Detail</button>
+                <div class="modal fade" id="wallhanging`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">`+ v.name + `</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="row" >
+                        <div class="col-md-5">
+                            <img class="img-top img-fluid" src="`+ v.image + `" alt="" height="150px">
+                        </div>
+                        <div class="col-md-6">
+                           <p>
+                           `+ v.description + `
+                            </p>
+                          
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" class="v_id" value="`+ v.id + `">
+                    <input type="hidden" class="v_name" value="`+ v.description + `">
+                    <input type="hidden" class="v_image" value="`+ v.image + `">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>`
+
+                });
+                pot_hangers.html(p_h);
+                // Railing Brackets start  
+                $.each(data.railing_brackets, function (abc, v) {
+                    //    console.log(value.name)
+
+
+                    r_b += `<div class="col-md-3 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ v.image + `" alt="" >
+            
+            <div class="card-body"><h5 class="card-title">`+ v.name + `<span></span>
+                <p></p>
+                </div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#railingbrackets`+ v.id + `">Detail</button>
+                <div class="modal fade" id="railingbrackets`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">`+ v.name + `</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="row" >
+                        <div class="col-md-5">
+                            <img class="img-top img-fluid" src="`+ v.image + `" alt="" height="150px">
+                        </div>
+                        <div class="col-md-6">
+                           <p>
+                           `+ v.description + `
+                            </p>
+                          
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" class="v_id" value="`+ v.id + `">
+                    <input type="hidden" class="v_name" value="`+ v.description + `">
+                    <input type="hidden" class="v_image" value="`+ v.image + `">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>`
+
+                });
+                railing_brackets.html(r_b);
+
+                //soil fertilizer start  
+                $.each(data.soil_fert, function (abc, v) {
+                    //    console.log(value.name)
+
+
+                    s_f += `<div class="col-md-5 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ v.image + `" alt="" >
+            
+    </div>
+    </div>
+    <div class="col-md-6 mt-4">
+                <p class="card-text">`+ v.description + `</p>
+             
+            </div>
+                <div class="modal fade" id="railing_brackets`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+   
+       
+                <div class="modal-footer">
+                    <input type="hidden" class="v_id" value="`+ v.id + `">
+                    <input type="hidden" class="v_name" value="`+ v.description + `">
+                    <input type="hidden" class="v_image" value="`+ v.image + `">
+                    
+                </div>
+            
+        
+
+            </div>`
+
+                });
+                soil_fert.html(s_f);
+                //Pesticides for plants start  
+                $.each(data.pest_plant, function (abc, v) {
+                    //    console.log(value.name)
+
+
+                    i_p += `<div class="col-md-5 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ v.image + `" alt="" >
+            
+    </div>
+    </div>
+    <div class="col-md-6 mt-4">
+                <p class="card-text">`+ v.description + `</p>
+             
+            </div>
+                <div class="modal fade" id="railingbrackets`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+   
+       
+                <div class="modal-footer">
+                    <input type="hidden" class="v_id" value="`+ v.id + `">
+                    <input type="hidden" class="v_name" value="`+ v.description + `">
+                    <input type="hidden" class="v_image" value="`+ v.image + `">
+                    
+                </div>
+            
+        
+
+            </div>`
+
+                });
+                pest_plant.html(i_p);
+                //seeds details start  
+                $.each(data.seeds_details, function (abc, v) {
+                    //    console.log(value.name)
+
+
+                    s_d += `<div class="col-md-5 mt-4">
+          <div class="card p-3">
+        <img class="img-top" src="`+ v.image + `" alt="" >
+            
+    </div>
+    </div>
+    <div class="col-md-6 mt-4">
+                <p class="card-text">`+ v.description + `</p>
+             
+            </div>
+                <div class="modal fade" id="railingbrackets`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+   
+       
+                <div class="modal-footer">
+                    <input type="hidden" class="v_id" value="`+ v.id + `">
+                    <input type="hidden" class="v_name" value="`+ v.description + `">
+                    <input type="hidden" class="v_image" value="`+ v.image + `">
+                    
+                </div>
+            
+        
+
+            </div>`
+
+                });
+                seeds_details.html(s_d);
+                //buying products start
+                $.each(data.buy_products, function (abc, v) {
+                    //    console.log(value.name)
+
+
+                    b_p += `<div class="col-md-3 mt-4" height="200px">
+          <div class="card p-3">
+        <img class="img-top img-fluid" src="`+ v.image + `" alt="" >
+            
+            <div class="card-body"><h2 class="card-title">`+ v.name + `<span></span>
+                <p></p>
+                </div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#greencold`+ v.id + `">Detail</button>
+                <div class="modal fade" id="greencold`+ v.id + `" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">`+ v.name + `</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="row" >
+                        <div class="col-md-5">
+                            <img class="img-top img-fluid" src="`+ v.image + `" alt="" height="150px">
+                        </div>
+                        <div class="col-md-6">
+                           <p>
+                           `+ v.description + `
+                            </p>
+                          
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" class="v_id" value="`+ v.id + `">
+                    <input type="hidden" class="v_name" value="`+ v.description + `">
+                    <input type="hidden" class="v_image" value="`+ v.image + `">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>`
+
+                });
+                buy_products.html(b_p);
+
+
+            }
+        });
+
+    </script>
+    <!-- contact section end -->
+
+    <!-- feedback start script -->
+    <script>
+        $('#e_name').keyup(function () {
+            let name = $('#e_name').val();
+            let name_RE = /^[a-zA-z\s]{3,}$/;
+            if (!name_RE.test(name)) {
+                $(this).css({ 'border-bottom': '2px solid red' });
+                $(this).next('small').show().text('Please enter valid name ').css({
+                    'color': 'yelllow'
+                })
+
+            }
+            else {
+                $(this).css({ 'border-bottom': '2px solid green' });
+                $(this).next('small').hide();
+
+            }
+        });
+        $('#e_email').keyup(function () {
+            let email = $('#e_email').val();
+            let email_RE = /^[\w\s]{3,}@[a-z]{3,5}.[a-z]{3}$/;
+            if (!email_RE.test(email)) {
+                $(this).css({ 'border-bottom': '2px solid red' });
+                $(this).next('small').show().text('Please enter valid email ').css({
+                    'color': 'red'
+                })
+
+            }
+            else {
+                $(this).css({ 'border-bottom': '2px solid green' });
+                $(this).next('small').hide();
+
+            }
+        });
+        $('#e_massage').keyup(function () {
+            let massage = $('#e_massage').val();
+            let massage_RE = /^[A-Za-z\s]{3,}$/;
+            if (!massage_RE.test(massage)) {
+                $(this).css({ 'border-bottom': '2px solid red' });
+                $(this).next('small').show().text('Please enter valid email ').css({
+                    'color': 'red'
+                })
+
+            }
+            else {
+                $(this).css({ 'border-bottom': '2px solid green' });
+                $(this).next('small').hide();
+
+            }
+        });
+
+        $('#checkfields').click(function () {
+            let name = $('#e_name').val();
+            let name_RE = /^[a-zA-z\s]{3,}$/;
+            let email = $('#e_email').val();
+            let email_RE = /^[\w\s]{3,}@[a-z]{3,5}.[a-z]{3}$/;
+            let massage = $('#e_massage').val();
+            let massage_RE = /^[A-Za-z\s]{3,}$/;
+            let myData = JSON.parse(localStorage.getItem('myData')) || [];
+            emptyFields('#e_name');
+            emptyFields('#e_email');
+            emptyFields('#e_massage');
+            if (name_RE.test(name) && email_RE.test(email) && massage_RE.test(massage)) {
+                myData.push({ 'name': name, 'email': email, 'message': massage });
+                localStorage.setItem('myData', JSON.stringify(myData));
+             
+                $('input').val('');
+                location.assign('project.html');
+            }
+            else {
+                alert('invalid data');
+            }
+
+
+        })
+
+
+        function emptyFields(id) {
+            if ($(id).val() == "") {
+                $(id).css({ 'border-bottom': '2px solid red' });
+                $(id).next('small').show().text('This field is required').css({
+                    'color': 'red'
+                })
+            }
+
+        }
+
+    </script>
+
+
+    <script>
+        document.getElementById("load-videos").addEventListener("click", function () {
+            // Use AJAX to fetch the JSON data
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "js.json", true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    const videos = JSON.parse(xhr.responseText);
+                    displayVideos(videos);
+                } else {
+                    console.error("Failed to load videos.");
+                }
+            };
+            xhr.send();
+        });
+
+        function displayVideos(videos) {
+            const videoContainer = document.getElementById("video-container");
+            videoContainer.innerHTML = "";
+
+            videos.forEach(function (video) {
+                const videoElement = document.createElement("div");
+                videoElement.innerHTML = `
+                    <h2>${video.title}</h2>
+                    <p>${video.description}</p>
+                    <video controls>
+                        <source src="${video.url}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                `;
+                videoContainer.appendChild(videoElement);
+            });
+        }
+
+
+
+    </script>
+
+    <script>
+        $("#condition_method").hide();
+        $("#trade_inground").hide();
+        $("#hydropnic_garden").hide();
+        $("#green_cold").hide();
+        $("#miniature_toys").hide();
+        $("#about_section").hide();
+        $("#garden_access").hide();
+        $("#decorative_pebbles").hide();
+        $("#garden_tools").hide();
+        $("#proper_pots").hide();
+        $("#wall_hanging").hide();
+        $("#pot_hangers").hide();
+        $("#railing_brackets").hide();
+        $("#book_section").hide();
+        $("#home_section").hide();
+        $("#soil_fert").hide();
+        $("#pest_plant").hide();
+        $("#seeds_details").hide();
+        $("#buy_products").hide();
+
+
+        // this is for navbar start
+        $("#nav_c_m").click(function () {
+            $("#condition_method").show();
+            $("#trade_inground").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#garden_access").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_tools").hide();
+            $("#wall_hanging").hide();
+            ("#pot_hangers").hide();
+            $("#railing_brackets").hide();
+            $("#book_detail").hide();
+            $("#soil_fert").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+            $("#buy_products").hide();
+
+
+        })
+        $("#nav_t_g").click(function () {
+            $("#trade_inground").show();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#garden_access").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_tools").hide();
+            $("#walzzal_hanging").hide();
+            ("#pot_hangers").hide();
+            $("#railing_brackets").hide();
+            $("#book_detail").hide();
+            $("#soil_fert").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+            $("#buy_products").hide();
+
+
+
+        })
+        $("#nav_h_g").click(function () {
+            $("#hydropnic_garden").show();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#green_cold").hide();
+            $("#garden_access").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_tools").hide();
+            $("#wall_hanging").hide();
+            ("#pot_hangers").hide();
+            $("#railing_brackets").hide();
+            $("#book_detail").hide();
+            $("#soil_fert").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+            $("#buy_products").hide();
+
+        })
+        $("#nav_g_c").click(function () {
+            $("#green_cold").show();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#garden_access").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_tools").hide();
+            $("#wall_hanging").hide();
+            ("#pot_hangers").hide();
+            $("#railing_brackets").hide();
+            $("#book_detail").hide();
+            $("#soil_fert").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+            $("#buy_products").hide();
+
+        })
+        $("#nav_m_t").click(function () {
+            $("#miniature_toys").show();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#garden_access").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_tools").hide();
+            $("#wall_hanging").hide();
+            ("#pot_hangers").hide();
+            $("#railing_brackets").hide();
+            $("#book_detail").hide();
+            $("#soil_fert").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+
+
+        })
+        $("#nav_about").click(function () {
+            $("#about_section").show();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#garden_access").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_tools").hide();
+            $("#decorative_pebbles").hide();
+            $("#proper_pots").hide();
+            $("#wall_hanging").hide();
+            ("#pot_hangers").hide();
+            $("#railing_brackets").hide();
+            $("#book_detail").hide();
+            $("#soil_fert").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+
+
+        })
+        $("#nav_g_a").click(function () {
+            $("#garden_access").show();
+            $("#about").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_tools").hide();
+            $("#wall_hanging").hide();
+            ("#pot_hangers").hide();
+            $("#railing_brackets").hide();
+            $("#book_detail").hide();
+            $("#soil_fert").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+
+        })
+        $("#nav_d_p").click(function () {
+            $("#decorative_pebbles").show();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#wall_hanging").hide();
+            ("#pot_hangers").hide();
+            $("#railing_brackets").hide();
+            $("#book_detail").hide();
+            $("#soil_fert").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+            $("#buy_products").hide();
+
+
+
+        })
+        $("#nav_g_t").click(function () {
+            $("#garden_tools").show();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#wall_hanging").hide();
+            ("#pot_hangers").hide();
+            $("#railing_brackets").hide();
+            $("#book_detail").hide();
+            $("#soil_fert").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+            $("#buy_products").hide();
+
+
+        })
+        $("#nav_p_p").click(function () {
+            $("#proper_pots").show();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#wall_hanging").hide();
+            ("#pot_hangers").hide();
+            $("#railing_brackets").hide();
+            $("#soil_fert").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+            $("#buy_products").hide();
+
+
+        })
+        $("#nav_w_h").click(function () {
+            $("#wall_hanging").show();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            ("#pot_hangers").hide();
+            $("#railing_brackets").hide();
+            $("#book_detail").hide();
+            $("#soil_fert").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+            $("#buy_products").hide();
+
+        })
+        $("#nav_p_h").click(function () {
+            $("#pot_hangers").show();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#railing_brackets").hide();
+            $("#book_detail").hide();
+            $("#soil_fert").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+            $("#buy_products").hide();
+
+
+        })
+        $("#nav_r_b").click(function () {
+            $("#railing_brackets").show();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#book_detail").hide();
+            $("#soil_fert").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+
+
+        })
+
+        $("#nav_books").click(function () {
+            $("#book_detail").show();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#soil_fert").hide();
+            $("#feedback").hide();
+            $("#feedback").hide();
+
+
+
+        })
+        $("#nav_home").click(function () {
+            $("#home_section").show();
+            $("#book_detail").hide();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#soil_fert").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#buy_products").hide();
+        })
+        $("#nav_s_f").click(function () {
+            $("#soil_fert").show();
+            $("#home_section").hide();
+            $("#book_detail").hide();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+            $("#buy_products").hide();
+
+
+        })
+        $("#nav_i_p").click(function () {
+            $("#pest_plant").show();
+            $("#soil_fert").hide();
+            $("#home_section").hide();
+            $("#book_detail").hide();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+            $("#buy_products").hide();
+
+
+        })
+        $("#nav_s").click(function () {
+            $("#seeds_details").show();
+            $("#soil_fert").hide();
+            $("#home_section").hide();
+            $("#book_detail").hide();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#pest_plant").hide();
+            $("#feedback").hide();
+            $("#buy_products").hide();
+
+
+        })
+        $("#nav_buy").click(function () {
+            $("#buy_products").show();
+            $("#soil_fert").hide();
+            $("#home_section").hide();
+            $("#book_detail").hide();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#pest_plant").hide();
+            $("#seeds_details").hide();
+            $("#feedback").hide();
+
+
+        })
+        //this is for navbar end
+        //this is for footer
+        $("#f_c_m").click(function () {
+            $("#condition_method").show();
+            $("#seeds_details").hide();
+            $("#soil_fert").hide();
+            $("#book_detail").hide();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#trade_inground").hide();
+            $("#hydropnic_garden").hide();
+            $("#green_cold").hide();
+            $("#pest_plant").hide();
+            $("#feedback").hide();
+            $("#home_section").hide();
+            $("#video-container").hide();
+
+
+        })
+        $("#f_t_g").click(function () {
+            $("#trade_inground").show();
+            $("#condition_method").hide();
+            $("#seeds_details").hide();
+            $("#soil_fert").hide();
+            $("#book_detail").hide();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#condition_method").hide();
+            $("#green_cold").hide();
+            $("#pest_plant").hide();
+            $("#feedback").hide();
+            $("#home_section").hide();
+            $("#video-container").hide();
+
+
+        })
+        $("#f_h_g").click(function () {
+            $("#hydropnic_garden").show();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#seeds_details").hide();
+            $("#soil_fert").hide();
+            $("#book_detail").hide();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#condition_method").hide();
+            $("#green_cold").hide();
+            $("#pest_plant").hide();
+            $("#feedback").hide();
+            $("#home_section").hide();
+            $("#video-container").hide();
+
+
+        })
+        $("#f_g_c").click(function () {
+            $("#green_cold").show();
+            $("#hydropnic_garden").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#seeds_details").hide();
+            $("#soil_fert").hide();
+            $("#book_detail").hide();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#pest_plant").hide();
+            $("#feedback").hide();
+            $("#home_section").hide();
+            $("#video-container").hide();
+
+
+        })
+        $("#f_m_t").click(function () {
+            $("#miniature_toys").show();
+            $("#green_cold").hide();
+            $("#hydropnic_garden").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#seeds_details").hide();
+            $("#soil_fert").hide();
+            $("#book_detail").hide();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#about_section").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#pest_plant").hide();
+            $("#feedback").hide();
+            $("#home_section").hide();
+            $("#video-container").hide();
+
+
+        })
+        $("#f_g_a").click(function () {
+            $("#garden_access").show();
+            $("#miniature_toys").hide();
+            $("#green_cold").hide();
+            $("#hydropnic_garden").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#seeds_details").hide();
+            $("#soil_fert").hide();
+            $("#book_detail").hide();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#decorative_pebbles").hide();
+            $("#about_section").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#pest_plant").hide();
+            $("#feedback").hide();
+            $("#home_section").hide();
+            $("#video-container").hide();
+
+
+        })
+        $("#f_d_p").click(function () {
+            $("#decorative_pebbles").show();
+            $("#garden_access").hide();
+            $("#miniature_toys").hide();
+            $("#green_cold").hide();
+            $("#hydropnic_garden").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#seeds_details").hide();
+            $("#soil_fert").hide();
+            $("#book_detail").hide();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#about_section").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#pest_plant").hide();
+            $("#feedback").hide();
+            $("#home_section").hide();
+            $("#video-container").hide();
+
+
+        })
+        $("#f_home").click(function () {
+            $("#home_section").show();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#miniature_toys").hide();
+            $("#green_cold").hide();
+            $("#hydropnic_garden").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#seeds_details").hide();
+            $("#soil_fert").hide();
+            $("#book_detail").hide();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#about_section").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#pest_plant").hide();
+            $("#feedback").hide();
+            $("#video-container").hide();
+
+
+        })
+        $("#f_about").click(function () {
+            $("#about_section").show();
+            $("#home_section").hide();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#miniature_toys").hide();
+            $("#green_cold").hide();
+            $("#hydropnic_garden").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#seeds_details").hide();
+            $("#soil_fert").hide();
+            $("#book_detail").hide();
+            $("#railing_brackets").hide();
+            $("#pot_hangers").hide();
+            $("#wall_hanging").hide();
+            $("#proper_pots").hide();
+            $("#condition_method").hide();
+            $("#hydropnic_garden").hide();
+            $("#pest_plant").hide();
+            $("#feedback").hide();
+            $("#home_section").hide();
+            $("#video-container").hide();
+
+
+        })
+        // this is for categories start 
+        $("#c_m").click(function () {
+            $("#condition_method").show();
+            $("#trade_inground").hide();
+            $("#decorative_pebbles").hide();
+            $("#green_cold").hide();
+            $("#miniature_toys").hide();
+            $("#book_detail").hide();
+        })
+        $("#t_g").click(function () {
+            $("#trade_inground").show();
+            $("#condition_method").hide();
+            $("#decorative_pebbles").hide();
+            $("#green_cold").hide();
+            $("#miniature_toys").hide();
+            $("#book_detail").hide();
+
+        })
+        $("#h_g").click(function () {
+            $("#hydropnic_garden").show();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#green_cold").hide();
+            $("#miniature_toys").hide();
+            $("#book_detail").hide();
+        })
+        $("#g_c").click(function () {
+            $("#green_cold").show();
+            $("#hydropnic_garden").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#miniature_toys").hide();
+            $("#book_detail").hide();
+        })
+        $("#m_t").click(function () {
+            $("#miniature_toys").show();
+            $("#hydropnic_garden").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#green_cold").hide();
+            $("#book_detail").hide();
+        })
+        $("#g_a").click(function () {
+            $("#garden_access").show();
+            $("#miniature_toys").hide();
+            $("#hydropnic_garden").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#green_cold").hide();
+            $("#book_detail").hide();
+        })
+        $("#d_p").click(function () {
+            $("#decorative_pebbles").show();
+            $("#garden_access").hide();
+            $("#miniature_toys").hide();
+            $("#hydropnic_garden").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#green_cold").hide();
+            $("#book_detail").hide();
+        })
+        $("#h_s").click(function () {
+            $("#home_section").show();
+            $("#decorative_pebbles").hide();
+            $("#garden_access").hide();
+            $("#miniature_toys").hide();
+            $("#hydropnic_garden").hide();
+            $("#trade_inground").hide();
+            $("#condition_method").hide();
+            $("#green_cold").hide();
+            $("#book_detail").hide();
+        })
+
+
+
+
+        //this is for categories end
+
+
+    </script>
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+[
+  {
+      "title": "Video 1",
+      "description": "This is an informative video.",
+      "url": "./images/video3.mp4"
+  },
+  {
+      "title": "Video 2",
+      "description": "An illustrative video.",
+      "url": "./images/video4.mp4"
+  }
+]
